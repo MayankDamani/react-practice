@@ -1,0 +1,8 @@
+What is Context??
+
+Context provides a way to pass the data through the component tree without having to pass down 
+props down manually at every level.
+
+Step 1: Create the Context
+Step 2: Provide a context value
+Step 3: Consume the context value. 

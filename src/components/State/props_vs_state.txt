@@ -1,0 +1,17 @@
+1 - props
+
+=> props get passed to the component.
+=> compared to functional parameters in a programming.
+=> props are immutable.
+=> How to access props??
+    a) props in functional component.
+    b) this.props in class component.
+
+2- state
+
+=> state is managed within a component.
+=> compared to the variables declared in the function body in programming.
+=> state can be changed.
+=> How to access state??
+    a) useState Hook in functional component.
+    b) this.state in class component.

@@ -1,0 +1,25 @@
+1 - constructor(props)
+
+=> A special function that will get called whenever a new instance of a component is created.
+=> Used to initializa state and binding events.
+=> Do not make HTTP requests in the constructor.
+=> Always make call of super(props) in the constructor to use state and props.
+
+2 - static getDerivedStateFromProps(props,state)
+
+=> When the state of the component depends on the changes in the props over time. i.e props/state of a component depends on the props of the parent component. 
+=> Used to set the state.
+=> Do not make HTTP requests.
+
+3 - render()
+
+=> Only required method.
+=> Read props and state and return JSX.
+=> Do not change state or interact with DOM or make AJAX calls.
+=> Childeren components lifecycle methods are also executed.
+
+4 - componentDidMount()
+
+=> Invoked immediately after a component and all its children component have been rendered 
+to the DOM.
+=> Interact with the DOM or perform AJAX calls to load data.

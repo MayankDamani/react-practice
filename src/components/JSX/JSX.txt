@@ -1,0 +1,7 @@
+What is JSX??
+
+Javascript XML(JSX) - Extenstion to Javascript language syntax.
+Write XML-like code for elements and components.
+JSX tags have a tag name, attributes and children.
+JSX is not necessity to write React applications.
+JSX makes your react code simple and elegant. 

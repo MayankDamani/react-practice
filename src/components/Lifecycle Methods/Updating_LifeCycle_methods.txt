@@ -1,0 +1,31 @@
+1 - static getderivedStateFromProps(props,state)
+
+=> This Method is called every time when a component is re-rendered.
+=> This Method is used when a state depends on props of other components.
+=> Do not make any HTTP requests or AJAX calls in this method.
+
+2 - shouldComponentUpdate(nextProps, nextState).
+
+=> Decides should component re-render or not by comparing current state and props with nextProps and nextState.
+=> Performance Optimization.
+=> Do not make any HTTP requests or AJAX calls in this method.
+
+3 - render()
+
+=> Only required method.
+=> Read props and state and return JSX.
+=> Do not change state or intereact with DOM or make AJAX calls.
+
+4 - getSnapshotsBeforUpdate(prevProps, prevState)
+
+=> Called right before the changes from the virtual DOM are to be reflected in the Actual DOM.
+=> Used to capture some info. from the DOM. for e.g: to read user scroll position and after 
+update maintain that scroll position.
+=> Will return null or a value and the returned value will be passed to the next method as 
+third paramter.
+
+5 - componentDidUpdate(prevProps, prevState, snapshot)
+
+=> Called after the render is finished in the re-render cycle.
+=> We can make the AJAX calls here but before making AJAX calls we need to compare previous props 
+with current props to avoid unwanted requests.

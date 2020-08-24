@@ -1,0 +1,21 @@
+Regular Component
+
+=> A regular Component does not implement the shouldComponentUpdate(). It always returns true by
+   default.
+
+
+Pure Component
+
+=> A pure Component implements shouldComponentUpdate() with a shallow props and state comparison.
+
+SC of prevState with currentState
+SC of prevProps with currentProps
+
+if difference then Re-Render Component else component is not re-rendered - performance boost.
+
+=> It is a good idea to ensure that all children components are also pure to avoid unexpected 
+   behaviour.
+
+=> Never mutate state. Always return a new object that reflect new state. 
+
+=> Works only with Class component.

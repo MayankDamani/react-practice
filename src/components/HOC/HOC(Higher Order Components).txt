@@ -1,0 +1,12 @@
+1 - Why Higher Order Components?
+
+To share common functionality between components. In our case it is Counter Functionality  in two components ClickCounter and 
+HoverCounter.
+
+2 - What is Higher Order Component - HOC
+
+A pattern in which a function takes a Component as an argument and returns a new Component.
+
+const newComponennt = higherOrderComponent(originalComponent);
+
+New Component can add new Functionality to original Component so it is also known as Enhanced Component.

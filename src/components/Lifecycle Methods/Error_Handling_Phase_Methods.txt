@@ -1,0 +1,8 @@
+1 - static getDerivedStateFromError(error)
+
+=> 
+
+
+2 - componentDidCatch(error)
+
+=> 
